@@ -11,27 +11,23 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo">
-      <a class="main-header__logo-image logo-image" href="index.html">
-        <img src="#" alt="Логотип магазина Cat Energy" width="33" height="38">
-      </a>
-      <a class="main-header__logo-text logo-text" href="index.html">
-        <img src="#" alt="Текстовый логотип магазина Cat Energy" width="101" height="18"><!-- не уверена здесь -->
-      </a>
-    </div>
-    <nav class="main-navigation">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image" src="#" alt="Логотип магазина Cat Energy" width="33" height="38">
+      <img class="logo__text" src="#" alt="Текстовый логотип магазина Cat Energy" width="101" height="18">
+    </a>
+    <nav class="main-header__navigation main-navigation">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a href="index.html">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Подбор программы</a>
+          <a class="site-list__link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -40,13 +36,13 @@
     <section class="main-container__hero hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="#" alt="Упаковка питания Cat Energy с курицей в виде стакана 500 грамм" width="280" height="270">
+      <img class="hero__images" src="#" alt="Упаковка питания Cat Energy с курицей в виде стакана 500 грамм" width="280" height="270">
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
     <section class="main-container__benefits benefits">
       <h2 class="visually-hidden">Польза различных видов питания Cat Energy для вашего кота</h2>
       <ul class="benefits__list">
-        <li class="benefits__item benefit benefit--slim"><!-- Нужен ли элемент benefits__item здесь, если сетка списка будет сделана с помощью gap? -->
+        <li class="benefits__item benefit benefit--slim">
           <h3 class="benefit__title">Похудение</h3>
           <p class="benefit__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="benefit__link" href="#">Каталог slim</a>
@@ -93,8 +89,8 @@
         <dd class="price__definition">15 000 руб.</dd>
       </dl>
       <div class="example__slider slider-compare">
-        <img class="slider-compare__before-image" src="#" alt="До замены обычного корма на Cat Energy - толстый кот" width="280" height="256">
-        <img class="slider-compare__after-image" src="#" alt="После замены обычного корма на Cat Energy - стройный кот" width="280" height="256">
+        <img class="slider-compare__image slider-compare__image--before" src="#" alt="До замены обычного корма на Cat Energy - толстый кот" width="280" height="256">
+        <img class="slider-compare__image slider-compare__image--after" src="#" alt="После замены обычного корма на Cat Energy - стройный кот" width="280" height="256">
         <button class="slider-compare__button" type="button">Передвинуть ползунок</button>
       </div>
     </section>
@@ -108,8 +104,8 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo-text logo-text logo-text--size-big" href="index.html">
-      <img src="#" alt="Текстовый логотип магазина Cat Energy" width="128" height="24">
+    <a class="main-footer__logo logo" href="index.html">
+      <img class="logo__text" src="#" alt="Текстовый логотип магазина Cat Energy" width="101" height="18">
     </a>
     <ul class="main-footer__social social">
       <li class="social__item">
