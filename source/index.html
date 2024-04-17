@@ -36,7 +36,11 @@
     <section class="main-container__hero hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__images" src="#" alt="Упаковка питания Cat Energy с курицей в виде стакана 500 грамм" width="280" height="270">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
+        <img class="hero__images" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" alt="Упаковка питания Cat Energy с курицей в виде стакана 500 грамм" width="280" height="270">
+      </picture>
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
     <section class="main-container__benefits benefits">
@@ -89,8 +93,14 @@
         <dd class="price__definition">15 000 руб.</dd>
       </dl>
       <div class="example__slider slider-compare">
-        <img class="slider-compare__image slider-compare__image--before" src="#" alt="До замены обычного корма на Cat Energy - толстый кот" width="280" height="256">
-        <img class="slider-compare__image slider-compare__image--after" src="#" alt="После замены обычного корма на Cat Energy - стройный кот" width="280" height="256">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/compare-fat-cat-tablet@1x.png 1x, images/compare-fat-cat-tablet@2x.png 2x">
+          <img class="slider-compare__image slider-compare__image--before" src="images/compare-fat-cat-mobile@1x.png" srcset="images/compare-fat-cat-mobile@2x.png 2x" alt="До замены обычного корма на Cat Energy - толстый кот" width="280" height="256">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/compare-thin-cat-tablet@1x.png 1x, images/compare-thin-cat-tablet@2x.png 2x">
+          <img class="slider-compare__image slider-compare__image--after" src="images/compare-thin-cat-mobile@1x.png" srcset="images/compare-thin-cat-mobile@2x.png 2x" alt="После замены обычного корма на Cat Energy - стройный кот" width="280" height="256">
+        </picture>
         <button class="slider-compare__button" type="button">Передвинуть ползунок</button>
       </div>
     </section>
