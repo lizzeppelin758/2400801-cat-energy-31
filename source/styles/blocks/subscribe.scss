@@ -1,0 +1,23 @@
+.subscribe {
+  font-family: $secondary-font;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $title-color-text;
+}
+
+.subscribe__slogan {
+  font-size: 16px;
+  line-height: 24px;
+  color: $title-color-text;
+}
+
+.subscribe__input {
+  font-family: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: inherit;
+}
