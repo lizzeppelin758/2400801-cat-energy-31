@@ -16,8 +16,12 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image" src="#" alt="Логотип магазина Cat Energy" width="33" height="38">
-      <img class="logo__text" src="#" alt="Товарный знак магазина Cat Energy" width="101" height="18">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg">
+        <img class="logo__image" src="images/logo-img-mobile.svg" alt="Логотип магазина Cat Energy" width="33" height="38">
+      </picture>
+      <img class="logo__text" src="images/logo-text-mobile.svg" alt="Товарный знак магазина Cat Energy" width="101" height="18">
     </a>
     <nav class="main-header__navigation main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -119,7 +123,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo logo" href="index.html">
-      <img class="logo__text" src="#" alt="Текстовый логотип магазина Cat Energy" width="101" height="18">
+      <img class="logo__text" src="images/logo-text-mobile.svg" alt="Текстовый логотип магазина Cat Energy" width="101" height="18">
     </a>
     <ul class="main-footer__social social">
       <li class="social__item">
