@@ -1,5 +1,10 @@
 .price {
-  font-family: $secondary-font;
-  line-height: 20px;
-  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include font($secondary-font, 14px, 20px, 400, uppercase, $title-color-text);
+}
+
+.price__definition {
+  margin: 0;
 }

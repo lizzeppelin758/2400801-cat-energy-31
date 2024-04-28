@@ -1,4 +1,17 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
   padding: 40px 20px;
   background-color: $soft-background-color;
+}
+
+.main-footer__logo {
+  display: block;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.main-footer__copyright {
+  display: block;
+  margin-top: 20px;
 }

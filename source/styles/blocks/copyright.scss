@@ -1,6 +1,4 @@
 .copyright {
-  font-size: 16px;
-  line-height: 20px;
+  @include font($primary-font, 16px, 20px, 400, none, inherit);
   text-decoration: none;
-  color: inherit;
 }

@@ -7,8 +7,23 @@
 }
 
 .example__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include font($secondary-font, 36px, 40px, 400, none, $title-color-text);
+}
+
+.example__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.example__price {
+  margin: 0;
+  margin-bottom: 20px;
 }

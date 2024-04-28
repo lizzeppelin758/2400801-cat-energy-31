@@ -1,18 +1,59 @@
+.card {
+  display: grid;
+  grid-template-areas: "img title" "img properties" "button button";
+  padding: 20px 20px 25px;
+
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+}
+
+.card__link-image {
+  grid-area: img;
+}
+
 .card__link-title {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #222222;
+  grid-area: title;
+
+  @include font($secondary-font, 16px, 20px, 400, uppercase, $title-secondary-color-text);
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .card__title {
+  margin: 0;
+  max-width: 76px;
+
   font: inherit;
 }
 
 .card__properties {
+  grid-area: properties;
+
   font-size: 12px;
   line-height: 16px;
+}
+
+.card__property {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  grid-area: button;
+  justify-self: stretch;
+}
+
+.card--show-more {
+  grid-template-areas: "title" "description" "button";
+  justify-items: center;
+}
+
+.card--show-more .card__title {
+  max-width: max-content;
+}
+
+.card__description {
+  grid-area: description;
 }
