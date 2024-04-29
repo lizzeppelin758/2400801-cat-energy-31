@@ -1,23 +1,20 @@
 .subscribe {
+  padding: 40px 20px;
+
   font-family: $secondary-font;
 }
 
 .subscribe__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color-text;
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  @include font(inherit, 24px, 24px, 400, none, $title-color-text);
 }
 
 .subscribe__slogan {
-  font-size: 16px;
-  line-height: 24px;
-  color: $title-color-text;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @include font(inherit, 16px, 24px, 400, none, $title-color-text);
 }
 
-.subscribe__input {
-  font-family: inherit;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: inherit;
-}

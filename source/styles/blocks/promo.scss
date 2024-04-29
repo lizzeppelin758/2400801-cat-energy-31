@@ -1,6 +1,13 @@
 .promo {
+  min-height: 290px;
   color: $title-light-color-text;
+  background-image:
+    linear-gradient($bright-opacity-background-color, $bright-opacity-background-color),
+    image-set(url("../../images/promo-background-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/promo-background-mobile@2x.jpg") type("image/jpg") 2x);
   background-color: $bright-background-color;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .promo__slogan {

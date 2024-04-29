@@ -1,0 +1,13 @@
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-form__input {
+  padding: 13px;
+
+  @include font(inherit, 20px, 30px, 400, uppercase, inherit);
+
+  border: 1px solid #cdcdcd;
+}

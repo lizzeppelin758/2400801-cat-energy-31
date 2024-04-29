@@ -1,11 +1,19 @@
+.action {
+  padding: 10px 20px 49px;
+}
+
 .action__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include font($secondary-font, 36px, 40px, 400, none, $title-color-text);
 }
 
 .action__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }

@@ -3,18 +3,28 @@
 }
 
 .location__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
 }
 
 .location__slogan {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
+  margin: 0;
+
+  @include font($secondary-font, 16px, 20px, 400, uppercase, #111111);
 }
 
 .location__address {
   font-style: normal;
   line-height: 20px;
+}
+
+
+.location__map {
+  height: 362px;
+  background-image:
+    image-set(url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
