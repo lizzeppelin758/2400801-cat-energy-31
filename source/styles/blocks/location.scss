@@ -19,9 +19,9 @@
   line-height: 20px;
 }
 
-
 .location__map {
   height: 362px;
+  overflow: hidden;
   background-image:
     image-set(url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);

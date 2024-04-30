@@ -1,6 +1,7 @@
 .price {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include font($secondary-font, 14px, 20px, 400, uppercase, $title-color-text);
 }

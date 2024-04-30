@@ -1,16 +1,41 @@
 .result {
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
+}
+
+.result__item {
+  position: relative;
+
+  padding-bottom: 14px;
 }
 
 .result__term {
+  position: absolute;
+  width: 70%;
+  min-height: 24px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+
+  background-color: $soft-background-color;
 }
 
 .result__definition {
   margin: 0;
+  padding: 14px 15px 18px;
+  min-width: 124px;
 
-  @include font($secondary-font, 24px, 24px, 400, none, $base-color-text);
+  @include font($secondary-font, 24px, 24px, 400, uppercase, $base-color-text);
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
 }

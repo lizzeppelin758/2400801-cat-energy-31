@@ -5,6 +5,7 @@
 .catalog__title {
   margin-top: 0;
   margin-bottom: 41px;
+  padding: 0 20px;
 
   @include font($secondary-font, 36px, 36px, 400, none, $title-color-text);
 }
