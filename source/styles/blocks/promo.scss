@@ -1,16 +1,28 @@
 .promo {
   min-height: 290px;
+  padding: 59px 60px 20px;
+
   color: $title-light-color-text;
   background-image:
     linear-gradient($bright-opacity-background-color, $bright-opacity-background-color),
     image-set(url("../../images/promo-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/promo-background-mobile@2x.jpg") type("image/jpg") 2x);
   background-color: $bright-background-color;
-  background-size: cover;
+  background-size: cover, auto;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .promo__slogan {
+  padding-top: 128px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+
+  background-image: url("../../icons/stack.svg#promo-gift");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }

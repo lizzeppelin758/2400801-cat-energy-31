@@ -11,12 +11,37 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.social__item {
-  outline: 1px solid #000000;
-}
-
 .social__link {
   display: block;
   min-width: 28px;
   min-height: 22px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.social__link--telegram {
+  &::before {
+    mask-image: url("../../icons/stack.svg#social-telegram");
+  }
+}
+
+.social__link--vkontakte {
+  &::before {
+    mask-image: url("../../icons/stack.svg#social-vkontakte");
+  }
+}
+
+.social__link--youtube {
+  &::before {
+    mask-image: url("../../icons/stack.svg#social-youtube");
+  }
 }

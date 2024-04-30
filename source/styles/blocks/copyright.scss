@@ -1,4 +1,20 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @include font($primary-font, 16px, 20px, 400, none, inherit);
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
 }

@@ -1,3 +1,7 @@
 .main-container {
   flex-grow: 1;
 }
+
+.main-container__wrapper {
+  min-width: 320px;
+}

@@ -14,19 +14,21 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg">
-        <img class="logo__image" src="images/logo-img-mobile.svg" alt="Логотип магазина Cat Energy" width="33" height="38">
-      </picture>
-      <img class="logo__text" src="images/logo-text-mobile.svg" alt="Товарный знак магазина Cat Energy" width="101" height="18">
-    </a>
-    <nav class="main-header__navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">
+  <header class="page__header main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg">
+          <img class="logo__image" src="images/logo-img-mobile.svg" alt="Логотип магазина Cat Energy" width="33" height="38">
+        </picture>
+        <img class="logo__text" src="images/logo-text-mobile.svg" alt="Товарный знак магазина Cat Energy" width="101" height="18">
+      </a>
+      <button class="main-header__navigation-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-header__navigation main-navigation">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
@@ -41,7 +43,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="main-container__catalog catalog">
+    <section class="main-container__wrapper catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -243,7 +245,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__addition addition">
+    <section class="main-container__wrapper addition">
       <h2 class="addition__title">Дополнительные товары</h2>
       <ul class="addition__list">
         <li class="addition__item addition-card">
@@ -293,7 +295,7 @@
       </section>
     </section>
 
-    <section class="main-container__subscribe subscribe">
+    <section class="main-container__wrapper subscribe">
       <h2 class="subscribe__title">Акции и новики</h2>
       <p class="subscribe__slogan">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form email-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -303,7 +305,7 @@
       </form>
     </section>
 
-    <section class=" main-container__location location location--catalog">
+    <section class=" main-container__wrapper location location--catalog">
       <div class="location__wrapper">
         <h2 class="visually-hidden">Наше месторасположение</h2>
         <p class="location__slogan">Приглашаем к сотрудничеству дилеров!</p>

@@ -8,12 +8,15 @@
     image-set(url("../../images/index-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/index-background-mobile@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover, auto 302px;
+  background-position: 50% 0, 50% 0;
+  background-color: linear-gradient($bright-opacity-background-color 302px, $base-background-color 302px);
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -27,9 +30,11 @@
 
 .hero__image {
   display: block;
-  margin-bottom: 3px;
+  margin: 0 auto 3px;
 }
 
 .hero__link {
   display: block;
+  width: 280px;
+  margin: 0 auto;
 }

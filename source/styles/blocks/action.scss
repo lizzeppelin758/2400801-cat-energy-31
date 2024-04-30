@@ -17,3 +17,47 @@
   padding: 0;
   list-style-type: none;
 }
+
+.action__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    background-color: #68b738;
+  }
+}
+
+.action__item--healthy::before {
+  background-image: url("../../icons/stack.svg#action-leaf");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.action__item--cooking::before {
+  background-image: url("../../icons/stack.svg#action-cook");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 29px;
+}
+
+.action__item--meal::before {
+  background-image: url("../../icons/stack.svg#action-eat");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+}
+
+.action__item--time::before {
+  background-image: url("../../icons/stack.svg#action-time");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 31px;
+}
