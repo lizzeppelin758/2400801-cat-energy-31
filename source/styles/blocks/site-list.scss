@@ -12,4 +12,13 @@
   border-top: 1px solid #e6e6e6;
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+

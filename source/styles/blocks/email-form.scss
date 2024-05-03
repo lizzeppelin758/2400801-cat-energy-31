@@ -10,4 +10,17 @@
   @include font(inherit, 20px, 30px, 400, uppercase, inherit);
 
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: #444444;
+  }
+}
+
+.email-form__input--error {
+  border: 2px solid #ff8282;
 }

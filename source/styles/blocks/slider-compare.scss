@@ -6,13 +6,14 @@
   display: block;
 }
 
-.slider-compare__container {
+.slider-compare__resize {
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
 
-  background-color: inherit;
+  width: 50%;
+
+  overflow: hidden;
 }
 
 .slider-compare__button {
