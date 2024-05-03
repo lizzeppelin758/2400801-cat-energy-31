@@ -12,4 +12,3 @@ buttonMenu.addEventListener('click', () =>{
     buttonMenu.classList.remove('main-header__navigation-toggle--close');
   }
 });
-
