@@ -26,7 +26,23 @@
     mask-repeat: no-repeat;
     mask-position: center;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: $bright-background-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      background-color: $bright-background-color;
+    }
+  }
 }
+
 
 .social__link--telegram {
   &::before {

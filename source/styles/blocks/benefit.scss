@@ -45,7 +45,6 @@
   background-image: url("../../icons/stack.svg#benefit-cat-pro");
 }
 
-
 .benefit__description {
   margin-top: 0;
   margin-bottom: 15px;
@@ -71,5 +70,9 @@
     mask-image: url("../../icons/stack.svg#right-arrow");
     mask-repeat: no-repeat;
     mask-position: left center;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

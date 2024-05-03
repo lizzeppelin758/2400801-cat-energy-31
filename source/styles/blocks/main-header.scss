@@ -31,3 +31,13 @@
     mask-size: 24px 24px;
   }
 }
+
+.main-header__navigation-toggle--close {
+  &::before {
+    mask-image: url("../../icons/stack.svg#navigation-menu-close");
+  }
+}
+
+.main-header__navigation {
+  display: none;
+}
