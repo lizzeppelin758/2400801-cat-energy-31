@@ -21,43 +21,100 @@
 .action__item {
   display: flex;
   align-items: center;
+  gap: 20px;
 
   &::before {
     content: "";
     display: block;
     width: 60px;
     height: 60px;
-    margin-right: 20px;
     flex-shrink: 0;
 
     background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .action__item--healthy::before {
   background-image: url("../../icons/stack.svg#action-leaf");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 30px 32px;
 }
 
 .action__item--cooking::before {
   background-image: url("../../icons/stack.svg#action-cook");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 26px 29px;
 }
 
 .action__item--meal::before {
   background-image: url("../../icons/stack.svg#action-eat");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 25px 30px;
 }
 
 .action__item--time::before {
   background-image: url("../../icons/stack.svg#action-time");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 27px 31px;
+}
+
+@media (min-width: 768px) {
+  .action {
+    padding: 15px 30px 47px;
+
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .action__title {
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .action__list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 37px 153px;
+
+    counter-reset: item-counter;
+  }
+
+  .action__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    position: relative;
+    padding: 40px 0 57px;
+    max-width: 230px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      content: counter(item-counter);
+      counter-increment: item-counter;
+
+      @include font($secondary-font, 280px, 280px, 400, none, $soft-background-color);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .action {
+    padding: 31px 110px;
+
+    border-bottom: none;
+  }
+
+  .action__list {
+    gap: 94px;
+    justify-content: space-between;
+  }
 }

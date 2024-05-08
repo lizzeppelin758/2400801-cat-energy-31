@@ -10,8 +10,24 @@
 
 .page__header {
   min-width: 320px;
+  color: $title-color-text;
 }
 
 .page__footer {
   min-width: 320px;
+}
+
+@media (min-width: 1440px) {
+  .page__header--index {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+
+    color: $title-light-color-text;
+
+    background-color: transparent;
+  }
 }

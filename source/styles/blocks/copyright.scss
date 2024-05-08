@@ -9,6 +9,7 @@
   &::after {
     content: "";
     display: block;
+    flex-shrink: 0;
     width: 27px;
     height: 34px;
     background-color: #666666;
@@ -19,7 +20,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     &::after {
       background-color: $bright-background-color;
     }
@@ -31,5 +32,11 @@
     &::after {
       background-color: $bright-background-color;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    gap: 23px;
   }
 }
