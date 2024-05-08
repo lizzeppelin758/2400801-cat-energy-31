@@ -1,12 +1,9 @@
 .button {
   padding: 10px;
 
+  @include font($secondary-font, 16px, 20px, 400, uppercase, $title-light-color-text);
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
-  color: $title-light-color-text;
   text-decoration: none;
 
   background-color: $bright-background-color;
@@ -36,5 +33,14 @@
   &:active {
     background-color: #ebebeb;
     color: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 14px;
+
+    font-size: 20px;
+    line-height: 26px;
   }
 }

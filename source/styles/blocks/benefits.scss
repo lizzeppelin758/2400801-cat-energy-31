@@ -11,3 +11,26 @@
   list-style-type: none;
   padding: 0;
 }
+
+@media (min-width: 768px) {
+  .benefits {
+    padding: 0 30px 30px;
+  }
+
+  .benefits__list {
+    gap: 30px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .benefits {
+    padding: 40 110px;
+  }
+
+  .benefits__list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}

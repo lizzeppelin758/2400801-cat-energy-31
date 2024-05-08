@@ -9,3 +9,22 @@
 .price__definition {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .price {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 63px;
+  }
+}

@@ -14,8 +14,15 @@
   grid-area: img;
 }
 
+.card__image {
+  display: block;
+  width: 140px;
+  height: 107px;
+}
+
 .card__link-title {
   grid-area: title;
+  max-width: 76px;
 
   @include font($secondary-font, 16px, 20px, 400, uppercase, $title-secondary-color-text);
   text-decoration: none;
@@ -23,13 +30,14 @@
 
 .card__title {
   margin: 0;
-  max-width: 76px;
+
 
   font: inherit;
 }
 
 .card__properties {
   grid-area: properties;
+  margin: 0;
 
   font-size: 12px;
   line-height: 16px;
@@ -52,8 +60,104 @@
 
 .card--show-more .card__title {
   max-width: max-content;
+
+  padding-top: 53px;
+
+  background-image: url("../../icons/stack.svg#card-plus");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .card__description {
   grid-area: description;
+}
+
+@media (min-width: 768px) {
+  .card {
+    min-width: 324px;
+    grid-template-areas: "img" "title" "properties" "button";
+    justify-items: center;
+    gap: 22px;
+    padding: 0 37px 40px;
+
+    background-image: linear-gradient(to bottom, $base-background-color 81px, $soft-background-color 81px);
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .card__image {
+    width: 200px;
+    height: 210px;
+  }
+
+  .card__link-title {
+    max-width: 140px;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .card__button {
+    margin-top: 10px;
+  }
+
+  .card__properties {
+    justify-self: stretch;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card__property {
+    padding: 4px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__description {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .card--show-more {
+    grid-template-areas: "title" "description" "button";
+    place-items: end center;
+    padding-top: 50px;
+
+    background-color: $base-background-color;
+    background-image: none;
+    border: 2px solid $soft-background-color;
+  }
+
+  .card--show-more .card__title {
+    padding-top: 110px;
+    background-size: 60px 60px;
+  }
+
+  .card--show-more .card__description {
+    max-width: 170px;
+
+    text-align: center;
+  }
+
+  .card--show-more .card__button {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    gap: 31px;
+    min-width: 245px;
+  }
+
+  .card__image {
+    width: 169px;
+    height: 210px;
+  }
 }
