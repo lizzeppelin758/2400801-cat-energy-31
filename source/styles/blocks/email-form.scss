@@ -24,3 +24,19 @@
 .email-form__input--error {
   border: 2px solid #ff8282;
 }
+
+@media (min-width: 768px) {
+  .email-form {
+    flex-direction: row;
+    gap: 10px 0;
+  }
+
+  .email-form__input {
+    flex-grow: 1;
+  }
+
+  .email-form__button {
+    width: 256px;
+    flex-shrink: 0;
+  }
+}

@@ -14,3 +14,45 @@
   padding: 0;
   margin: 0;
 }
+
+
+@media (min-width: 768px) {
+  .addition {
+    padding: 34px 30px;
+  }
+
+  .addition__title {
+    margin-bottom: 80px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .addition {
+    padding: 52px 110px;
+  }
+
+  .addition__title {
+    margin-bottom: 80px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .addition__wrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  .addition__list {
+    flex-grow: 1;
+  }
+
+  .addition__promo {
+    width: 245px;
+    flex-shrink: 0;
+  }
+}
+
