@@ -22,7 +22,9 @@
 }
 
 .button--tall {
-  padding: 15px;
+  padding: 14px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .button--secondary {
@@ -33,14 +35,5 @@
   &:active {
     background-color: #ebebeb;
     color: inherit;
-  }
-}
-
-@media (min-width: 768px) {
-  .button {
-    padding: 14px;
-
-    font-size: 20px;
-    line-height: 26px;
   }
 }

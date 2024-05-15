@@ -1,6 +1,7 @@
 .addition-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas: "title" "properties" "button";
+  gap: 11px;
   padding: 13px 0 18px;
 
   border-bottom: 1px solid #cdcdcd;
@@ -11,6 +12,8 @@
 }
 
 .addition-card__link-title {
+  grid-area: title;
+
   @include font($secondary-font, 16px, 16px, 400, uppercase, $title-secondary-color-text);
   text-decoration: none;
 }
@@ -22,13 +25,62 @@
 }
 
 .addition-card__properties {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-area: properties;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 10px;
+  margin: 0;
 
   line-height: 14px;
 }
 
+.addition-card__definition {
+  justify-self: end;
+  margin: 0;
+}
+
 .addition-card__button {
+  grid-area: button;
+
   display: block;
+}
+
+@media (min-width: 768px) {
+  .addition-card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title title properties" "button button button";
+    padding: 26px 38px 28px;
+  }
+
+  .addition-card__link-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .addition-card__properties {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: end;
+    gap: 10px 50px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .addition-card {
+    grid-template-columns: fit-content 285px 244px;
+    grid-template-areas: "title properties button";
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0;
+  }
+
+
+  .addition-card__properties {
+    grid-template-columns: 135px 45px;
+    justify-items: start;
+    gap: 10px 112px;
+  }
 }

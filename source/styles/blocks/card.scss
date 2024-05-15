@@ -31,7 +31,6 @@
 .card__title {
   margin: 0;
 
-
   font: inherit;
 }
 
@@ -58,10 +57,14 @@
   justify-items: center;
 }
 
-.card--show-more .card__title {
-  max-width: max-content;
+.card--show-more .card__link-title {
+  max-width: fit-content;
+}
 
+.card--show-more .card__title {
   padding-top: 53px;
+
+  text-align: center;
 
   background-image: url("../../icons/stack.svg#card-plus");
   background-size: 30px 30px;
@@ -125,6 +128,7 @@
   }
 
   .card--show-more {
+    margin-top: 80px;
     grid-template-areas: "title" "description" "button";
     place-items: end center;
     padding-top: 50px;
@@ -134,8 +138,13 @@
     border: 2px solid $soft-background-color;
   }
 
+  .card--show-more .card__link-title {
+    max-width: 170px;
+  }
+
   .card--show-more .card__title {
     padding-top: 110px;
+
     background-size: 60px 60px;
   }
 
@@ -146,7 +155,7 @@
   }
 
   .card--show-more .card__button {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 
