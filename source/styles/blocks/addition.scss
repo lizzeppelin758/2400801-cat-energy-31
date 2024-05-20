@@ -1,4 +1,9 @@
-.addition {
+.addition__wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+
   padding: 25px 20px 20px;
 }
 
@@ -16,8 +21,8 @@
 }
 
 
-@media (min-width: 768px) {
-  .addition {
+@media (min-width: $tablet-width) {
+  .addition__wrapper {
     padding: 34px 30px;
   }
 
@@ -29,8 +34,8 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .addition {
+@media (min-width: $desktop-width) {
+  .addition__wrapper {
     padding: 52px 110px;
   }
 
@@ -41,7 +46,7 @@
     line-height: 40px;
   }
 
-  .addition__wrapper {
+  .addition__list-wrapper {
     display: flex;
     gap: 80px;
   }

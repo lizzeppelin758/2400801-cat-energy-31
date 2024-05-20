@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .slider-compare {
     display: grid;
     grid-template-columns: 280px auto 280px;

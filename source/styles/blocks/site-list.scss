@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .site-list__link {
     padding: 0;
 
@@ -47,7 +47,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
+  .site-list--index-desktop {
+    color: $title-light-color-text;
+  }
+
   .site-list__link {
     padding: 0;
 
@@ -55,9 +59,9 @@
     line-height: 30px;
   }
 
-  .site-list__link--current {
+  .site-list--index-desktop .site-list__link--current {
     &::after {
-      background-color: $title-light-color-text;
+      background-color: currentColor;
     }
   }
 }
