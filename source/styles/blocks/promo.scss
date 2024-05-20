@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo {
     min-height: 200px;
     padding: 57px 125px 60px 77px;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .promo {
     min-height: 200px;
     padding: 55px 42px 43px;

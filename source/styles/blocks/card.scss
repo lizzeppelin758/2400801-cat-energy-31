@@ -76,7 +76,7 @@
   grid-area: description;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .card {
     min-width: 324px;
     grid-template-areas: "img" "title" "properties" "button";
@@ -159,7 +159,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .card {
     gap: 31px;
     min-width: 245px;

@@ -21,11 +21,11 @@
   }
 }
 
-.email-form__input--error {
+.email-form__input:user-invalid {
   border: 2px solid #ff8282;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .email-form {
     flex-direction: row;
     gap: 10px 0;

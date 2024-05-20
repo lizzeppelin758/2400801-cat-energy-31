@@ -1,7 +1,14 @@
 .subscribe {
-  padding: 20px 20px 40px;
-
   font-family: $secondary-font;
+}
+
+.subscribe__wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 20px 20px 40px;
 }
 
 .subscribe__title {
@@ -18,8 +25,8 @@
   @include font(inherit, 16px, 24px, 400, none, $title-color-text);
 }
 
-@media (min-width: 768px) {
-  .subscribe {
+@media (min-width: $tablet-width) {
+  .subscribe__wrapper {
     padding: 46px 30px 80px;
   }
 
@@ -43,8 +50,8 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .subscribe {
+@media (min-width: $desktop-width) {
+  .subscribe__wrapper {
     padding: 44px 110px 104px;
   }
 

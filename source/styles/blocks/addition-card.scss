@@ -46,7 +46,7 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .addition-card {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "title title properties" "button button button";
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .addition-card {
     grid-template-columns: fit-content 285px 244px;
     grid-template-areas: "title properties button";

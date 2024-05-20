@@ -1,58 +1,35 @@
 .decor-title {
   position: relative;
-  padding-right: 40px;
   width: fit-content;
+  padding-right: 40px;
 
   background-color: $base-background-color;
+  box-shadow: -40px 0 0 0 $base-background-color;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: calc(100vw - 20px);
+    top: 18px;
+    right: 0;
+    width: 100vw;
     height: 2px;
 
     background-color: $bright-background-color;
+    box-shadow: 100vw 0 0 0 $bright-background-color;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .decor-title {
-    padding: 0 40px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: -30px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 2px;
-
-      background-color: $bright-background-color;
-    }
-
-    &::after {
-      width: calc(100vw - 30px);
-    }
+    padding-left: 40px;
+    box-shadow: none;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .decor-title {
-    margin-bottom: 80px;
     padding-left: 0;
-
-    &::before {
-      left: -110px;
-      width: 70px;
-    }
-
-    &::after {
-      width: calc(100vw - 110px);
-    }
+    box-shadow: -40px 0 0 0 $base-background-color;
   }
 }

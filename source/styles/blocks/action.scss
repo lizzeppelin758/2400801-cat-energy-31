@@ -56,7 +56,7 @@
   background-size: 27px 31px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .action {
     padding: 15px 30px 47px;
 
@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .action {
     padding: 31px 110px;
 
