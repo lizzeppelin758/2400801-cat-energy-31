@@ -31,7 +31,8 @@
     image-set(url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px 362px;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,6 +54,10 @@
 
   .location__map {
     min-height: 400px;
+    background-image:
+      image-set(url("../../images/map-background-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../images/map-background-tablet@2x.jpg") type("image/jpg") 2x);
+    background-size: $tablet-width 400px;
   }
 }
 
@@ -75,5 +80,12 @@
 
   .location__address {
     text-align: left;
+  }
+
+  .location__map {
+    background-image:
+      image-set(url("../../images/map-background-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/map-background-desktop@2x.jpg") type("image/jpg") 2x);
+    background-size: $desktop-width 400px;
   }
 }
