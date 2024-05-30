@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 29px;
 }
 
 .result__item {
@@ -33,7 +33,7 @@
   grid-column: 1 / 2;
 
   margin: 0;
-  padding: 14px 15px 18px;
+  padding: 14px 15px 16px;
   min-width: 124px;
   margin-bottom: 14px;
 
@@ -51,10 +51,12 @@
 
   .result__item {
     min-width: 162px;
+    max-width: 40%;
   }
 
   .result__term {
-    min-width: max-content;
+    width: fit-content;
+    max-width: 90%;
 
     font-size: 14px;
     line-height: 16px;
@@ -74,5 +76,9 @@
 @media (min-width: $desktop-width) {
   .result__term {
     background-color: $soft-background-color;
+  }
+
+  .result__definition {
+    padding-bottom: 19px;
   }
 }

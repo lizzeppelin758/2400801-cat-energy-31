@@ -75,7 +75,7 @@
   .action__list {
     display: flex;
     flex-flow: row wrap;
-    gap: 37px 153px;
+    gap: 37px 137px;
 
     counter-reset: item-counter;
   }
@@ -86,7 +86,9 @@
     gap: 31px;
     position: relative;
     padding: 40px 0 57px;
-    max-width: 230px;
+    max-width: 249px;
+
+    text-wrap: pretty;
 
     &::before {
       width: 80px;
@@ -114,7 +116,6 @@
   }
 
   .action__list {
-    gap: 94px;
-    justify-content: space-between;
+    gap: 20px 74px;
   }
 }
