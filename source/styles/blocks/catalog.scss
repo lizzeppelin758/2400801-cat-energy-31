@@ -4,12 +4,12 @@
   max-width: 1440px;
   margin: 0 auto;
 
-  padding-top: 27px;
+  padding-top: 29px;
 }
 
 .catalog__title {
   margin-top: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   padding: 0 20px;
 
   @include font($secondary-font, 36px, 36px, 400, none, $title-color-text);
@@ -27,7 +27,7 @@
   }
 
   .catalog__title {
-    margin-bottom: 63px;
+    margin-bottom: 84px;
     padding: 0;
 
     font-size: 60px;
@@ -48,6 +48,6 @@
 
   .catalog__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 63px;
+    gap: 63px 80px;
   }
 }

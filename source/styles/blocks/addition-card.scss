@@ -1,7 +1,7 @@
 .addition-card {
   display: grid;
   grid-template-areas: "title" "properties" "button";
-  gap: 11px;
+  gap: 14px;
   padding: 13px 0 18px;
 
   border-bottom: 1px solid #cdcdcd;
@@ -40,6 +40,10 @@
   margin: 0;
 }
 
+.addition-card__term {
+  margin: 0;
+}
+
 .addition-card__button {
   grid-area: button;
 
@@ -48,9 +52,10 @@
 
 @media (min-width: $tablet-width) {
   .addition-card {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "title title properties" "button button button";
-    padding: 26px 38px 28px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "title properties" "button button";
+    gap: 25px;
+    padding: 26px 38px 27px;
   }
 
   .addition-card__link-title {
@@ -59,28 +64,35 @@
   }
 
   .addition-card__properties {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: auto auto;
     justify-content: end;
     gap: 10px 50px;
 
     font-size: 16px;
     line-height: 20px;
   }
+
+  .addition-card__term {
+    justify-self: end;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .addition-card {
-    grid-template-columns: fit-content 285px 244px;
+    grid-template-columns: auto 285px 244px;
     grid-template-areas: "title properties button";
     align-items: center;
     gap: 40px;
     padding: 15px 0;
   }
 
-
   .addition-card__properties {
     grid-template-columns: 135px 45px;
     justify-items: start;
     gap: 10px 112px;
+  }
+
+  .addition-card__term {
+    justify-self: start;
   }
 }

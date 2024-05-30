@@ -1,7 +1,9 @@
 .card {
   display: grid;
+  grid-template-columns: 140px auto;
   grid-template-areas: "img title" "img properties" "button button";
-  padding: 20px 20px 25px;
+  align-items: center;
+  padding: 19px 20px 24px;
 
   border-bottom: 1px solid #ebebeb;
 
@@ -11,7 +13,16 @@
 }
 
 .card__link-image {
+  display: block;
   grid-area: img;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__image {
@@ -26,6 +37,14 @@
 
   @include font($secondary-font, 16px, 20px, 400, uppercase, $title-secondary-color-text);
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__title {
@@ -36,6 +55,7 @@
 
 .card__properties {
   grid-area: properties;
+  align-self: center;
   margin: 0;
 
   font-size: 12px;
@@ -45,16 +65,23 @@
 .card__property {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.card__definition {
+  margin: 0;
 }
 
 .card__button {
   grid-area: button;
   justify-self: stretch;
+  margin-top: 18px;
 }
 
 .card--show-more {
-  grid-template-areas: "title" "description" "button";
+  grid-template-areas: "title title" "description description" "button button";
   justify-items: center;
+  padding-top: 25px;
 }
 
 .card--show-more .card__link-title {
@@ -62,7 +89,8 @@
 }
 
 .card--show-more .card__title {
-  padding-top: 53px;
+  padding-top: 55px;
+  margin-bottom: 8px;
 
   text-align: center;
 
@@ -74,15 +102,24 @@
 
 .card__description {
   grid-area: description;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card--show-more .card__button {
+  margin-top: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .card {
     min-width: 324px;
+    grid-template-columns: auto;
     grid-template-areas: "img" "title" "properties" "button";
     justify-items: center;
-    gap: 22px;
-    padding: 0 37px 40px;
+    gap: 20px;
+    padding: 11px 37px 40px;
 
     background-image: linear-gradient(to bottom, $base-background-color 81px, $soft-background-color 81px);
     border: none;
@@ -106,7 +143,7 @@
   }
 
   .card__button {
-    margin-top: 10px;
+    margin-top: 7px;
   }
 
   .card__properties {
@@ -116,7 +153,8 @@
   }
 
   .card__property {
-    padding: 4px 0;
+    padding: 0 0 5px;
+    margin-bottom: 6px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -130,8 +168,9 @@
   .card--show-more {
     margin-top: 80px;
     grid-template-areas: "title" "description" "button";
+    gap: 0;
     place-items: end center;
-    padding-top: 50px;
+    padding-top: 25px;
 
     background-color: $base-background-color;
     background-image: none;
@@ -150,6 +189,7 @@
 
   .card--show-more .card__description {
     max-width: 170px;
+    align-self: center;
 
     text-align: center;
   }
@@ -161,12 +201,24 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    gap: 31px;
+    gap: 12px;
     min-width: 245px;
   }
 
   .card__image {
     width: 169px;
     height: 210px;
+  }
+
+  .card__properties {
+    margin-top: 10px;
+  }
+
+  .card__property {
+    padding-bottom: 6px;
+  }
+
+  .card__button {
+    margin-top: 18px;
   }
 }

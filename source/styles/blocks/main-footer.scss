@@ -26,6 +26,10 @@
   height: 24px;
 }
 
+.main-footer__social {
+  margin: 0;
+}
+
 .main-footer__copyright {
   display: block;
 }
@@ -35,12 +39,17 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px;
+    padding: 57px 30px;
+  }
+
+  .main-footer__social {
+    max-width: 200px;
+    margin-left: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    padding: 66px 110px;
+    padding: 68px 110px;
   }
 }

@@ -7,12 +7,12 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
   padding: 26px 20px;
 }
 
 .location__slogan {
   margin: 0;
+  padding-right: 5px;
 
   @include font($secondary-font, 16px, 20px, 400, uppercase, #111111);
 }
@@ -26,7 +26,6 @@
 
 .location__map {
   height: 362px;
-  overflow: hidden;
   background-image:
     image-set(url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);
@@ -55,22 +54,28 @@
   .location__map {
     min-height: 400px;
     background-image:
-      image-set(url("../../images/map-background-tablet@1x.jpg") type("image/jpg") 1x,
-      url("../../images/map-background-tablet@2x.jpg") type("image/jpg") 2x);
+      image-set(
+        url("../../images/map-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/map-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/map-background-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../images/map-background-tablet@2x.jpg") type("image/jpg") 2x);
     background-size: $tablet-width 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .location {
-    position: relative;
+    display: grid;
+    grid-template-columns: calc(50% - 45px) 45px 50%;
+    grid-template-rows: 95px auto 106px;
   }
 
   .location__wrapper {
-    position: absolute;
     width: 565px;
-    top: 95px;
-    left: calc(50% - 610px);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: end;
+    z-index: 1;
 
     gap: 87px;
     padding: 60px 80px;
@@ -83,6 +88,10 @@
   }
 
   .location__map {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    min-height: 100%;
+
     background-image:
       image-set(url("../../images/map-background-desktop@1x.jpg") type("image/jpg") 1x,
       url("../../images/map-background-desktop@2x.jpg") type("image/jpg") 2x);

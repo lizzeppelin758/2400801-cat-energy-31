@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 18px;
+    top: 10px;
     right: 0;
     width: 100vw;
     height: 2px;
@@ -24,6 +24,10 @@
   .decor-title {
     padding-left: 40px;
     box-shadow: none;
+
+    &::before {
+      top: 14px;
+    }
   }
 }
 
@@ -31,5 +35,9 @@
   .decor-title {
     padding-left: 0;
     box-shadow: -40px 0 0 0 $base-background-color;
+
+    &::before {
+      top: 18px;
+    }
   }
 }
