@@ -86,7 +86,7 @@
     gap: 31px;
     position: relative;
     padding: 40px 0 57px;
-    max-width: 249px;
+    max-width: 245px;
 
     text-wrap: pretty;
 
@@ -98,7 +98,7 @@
     &::after {
       position: absolute;
       z-index: -1;
-      right: 0;
+      left: 113px;
       top: 0;
       content: counter(item-counter);
       counter-increment: item-counter;
@@ -116,6 +116,6 @@
   }
 
   .action__list {
-    gap: 20px 74px;
+    gap: 20px 78px;
   }
 }
