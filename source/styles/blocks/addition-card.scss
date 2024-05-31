@@ -81,18 +81,22 @@
   .addition-card {
     grid-template-columns: auto 285px 244px;
     grid-template-areas: "title properties button";
-    align-items: center;
+    align-items: baseline;
     gap: 40px;
-    padding: 15px 0;
+    padding: 15px 0 16px;
   }
 
   .addition-card__properties {
     grid-template-columns: 135px 45px;
     justify-items: start;
-    gap: 10px 112px;
+    gap: 10px 105px;
   }
 
   .addition-card__term {
+    justify-self: start;
+  }
+
+  .addition-card__definition {
     justify-self: start;
   }
 }

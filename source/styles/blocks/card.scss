@@ -15,6 +15,7 @@
 .card__link-image {
   display: block;
   grid-area: img;
+  align-self: start;
 
   &:hover {
     opacity: 0.8;
